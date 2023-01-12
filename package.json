@@ -1,0 +1,23 @@
+{
+  "name": "@infogata/readergata-plugin-typings",
+  "homepage": "https://github.com/InfoGata/readergata-plugin-typings",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InfoGata/readergata-plugin-typings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InfoGata/readergata-plugin-typings/issues"
+  },
+  "version": "1.4.0",
+  "description": "Typings for the ReaderGata Plugin API",
+  "main": "",
+  "scripts": {
+    "test": "tsc"
+  },
+  "author": "Elijah Green",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

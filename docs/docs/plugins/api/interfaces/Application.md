@@ -8,6 +8,24 @@ custom_edit_url: null
 
 ## Methods
 
+### createNotification
+
+▸ **createNotification**(`notification`): `Promise`<`void`\>
+
+Show user a notification on the bottom left of the screen
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `notification` | [`NotificationMessage`](NotificationMessage.md) |
+
+#### Returns
+
+`Promise`<`void`\>
+
+___
+
 ### getCorsProxy
 
 ▸ **getCorsProxy**(): `Promise`<`undefined` \| `string`\>

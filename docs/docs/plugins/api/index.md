@@ -13,6 +13,7 @@ custom_edit_url: null
 - [Catalog](interfaces/Catalog.md)
 - [GetFeedRequest](interfaces/GetFeedRequest.md)
 - [ImageInfo](interfaces/ImageInfo.md)
+- [NotificationMessage](interfaces/NotificationMessage.md)
 - [PluginInfo](interfaces/PluginInfo.md)
 - [Publication](interfaces/Publication.md)
 - [PublicationSource](interfaces/PublicationSource.md)

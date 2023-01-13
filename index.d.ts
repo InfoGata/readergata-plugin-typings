@@ -3,6 +3,10 @@ declare global {
 
   interface Application {
     /**
+     * Show user a notification on the bottom left of the screen
+     */
+    createNotification(notification: NotificationMessage): Promise<void>;
+    /**
      * Sends a message to ui frames like `options` in `manifest.json`.
      */
     postUiMessage(msg: any): Promise<void>;
@@ -68,6 +72,14 @@ declare global {
      * Name of author
      */
     name: string;
+  }
+
+  interface NotificationMessage {
+    /**
+     * Message to show
+     */
+    message: string;
+    type?: "default" | "success" | "error" | "warning" | "info";
   }
 
   interface ImageInfo {

@@ -12,6 +12,8 @@ custom_edit_url: null
 - [Author](interfaces/Author.md)
 - [Catalog](interfaces/Catalog.md)
 - [GetFeedRequest](interfaces/GetFeedRequest.md)
+- [GetPublicationRequest](interfaces/GetPublicationRequest.md)
+- [GetPublicationResponse](interfaces/GetPublicationResponse.md)
 - [ImageInfo](interfaces/ImageInfo.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
 - [PluginInfo](interfaces/PluginInfo.md)

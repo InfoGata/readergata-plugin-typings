@@ -38,6 +38,37 @@ Get cors proxy configured in settings.
 
 ___
 
+### isNetworkRequestCorsDisabled
+
+▸ **isNetworkRequestCorsDisabled**(): `Promise`<`boolean`\>
+
+Used to determine whether requests from networkRequest are restricted by CORs.
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+___
+
+### networkRequest
+
+▸ **networkRequest**(`input`, `init?`): `Promise`<`Response`\>
+
+Make a networkRequest from parent AudioGata frame rather from plugin frame.
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `input` | `RequestInfo` |
+| `init?` | `RequestInit` |
+
+#### Returns
+
+`Promise`<`Response`\>
+
+___
+
 ### onGetFeed
 
 ▸ `Optional` **onGetFeed**(`request`): `Promise`<[`Feed`](../#feed)\>
@@ -53,6 +84,24 @@ Callback method to retreive catalogs and lists of publications
 #### Returns
 
 `Promise`<[`Feed`](../#feed)\>
+
+___
+
+### onGetPublication
+
+▸ `Optional` **onGetPublication**(`request`): `Promise`<[`GetPublicationResponse`](GetPublicationResponse.md)\>
+
+Callback method to get binary version of a publication rather than a url
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`GetPublicationRequest`](GetPublicationRequest.md) |
+
+#### Returns
+
+`Promise`<[`GetPublicationResponse`](GetPublicationResponse.md)\>
 
 ___
 

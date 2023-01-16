@@ -3,6 +3,14 @@ declare global {
 
   interface Application {
     /**
+     * Make a networkRequest from parent AudioGata frame rather from plugin frame.
+     */
+    networkRequest(input: RequestInfo, init?: RequestInit): Promise<Response>;
+    /**
+     * Used to determine whether requests from networkRequest are restricted by CORs.
+     */
+    isNetworkRequestCorsDisabled(): Promise<boolean>;
+    /**
      * Show user a notification on the bottom left of the screen
      */
     createNotification(notification: NotificationMessage): Promise<void>;
@@ -22,6 +30,12 @@ declare global {
      * Callback method that recieves parent.postMessage requests from UI frames.
      */
     onUiMessage?(message: any): Promise<void>;
+    /**
+     * Callback method to get binary version of a publication rather than a url
+     */
+    onGetPublication?(
+      request: GetPublicationRequest
+    ): Promise<GetPublicationResponse>;
   }
 
   interface Publication {
@@ -109,6 +123,17 @@ declare global {
      * Name of catalog
      */
     name: string;
+  }
+
+  interface GetPublicationRequest {
+    source: string;
+  }
+
+  interface GetPublicationResponse {
+    /**
+     * Binary data for the pdf/epub
+     */
+    data: string;
   }
 
   type CatalogFeed = {

@@ -8,7 +8,7 @@
   "bugs": {
     "url": "https://github.com/InfoGata/readergata-plugin-typings/issues"
   },
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Typings for the ReaderGata Plugin API",
   "main": "",
   "scripts": {

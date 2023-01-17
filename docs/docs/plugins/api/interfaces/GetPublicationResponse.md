@@ -8,8 +8,17 @@ custom_edit_url: null
 
 ## Properties
 
-### data
+### source
 
-• **data**: `string`
+• **source**: `string`
 
-Binary data for the pdf/epub
+Binary data or url for the pdf/epub
+
+___
+
+### sourceType
+
+• `Optional` **sourceType**: [`SourceType`](../#sourcetype)
+
+Whether source is a url or binary data
+If undefined, source will be treated as binary data

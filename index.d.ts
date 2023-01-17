@@ -129,11 +129,18 @@ declare global {
     source: string;
   }
 
+  type SourceType = "url" | "binary";
+
   interface GetPublicationResponse {
     /**
-     * Binary data for the pdf/epub
+     * Binary data or url for the pdf/epub
      */
-    data: string;
+    source: string;
+    /**
+     * Whether source is a url or binary data
+     * If undefined, source will be treated as binary data
+     */
+    sourceType?: SourceType;
   }
 
   type CatalogFeed = {

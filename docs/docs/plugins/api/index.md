@@ -52,6 +52,12 @@ ___
 | `items` | [`Publication`](interfaces/Publication.md)[] |
 | `type` | ``"publication"`` |
 
+___
+
+### SourceType
+
+Ƭ **SourceType**: ``"url"`` \| ``"binary"``
+
 ## Variables
 
 ### application

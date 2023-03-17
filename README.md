@@ -2,7 +2,7 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@infogata/readergata-plugin-typings)](https://www.npmjs.com/package/@infogata/readergata-plugin-typings)
 
-Types for [readergata](https://gitlab.com/elijahgreen/readergata) plugins.
+Types for [readergata](https://github.com/InfoGata/readergata) plugins.
 
 ## Installation
 

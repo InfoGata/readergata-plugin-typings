@@ -19,6 +19,7 @@ custom_edit_url: null
 - [PluginInfo](interfaces/PluginInfo.md)
 - [Publication](interfaces/Publication.md)
 - [PublicationSource](interfaces/PublicationSource.md)
+- [SearchRequest](interfaces/SearchRequest.md)
 
 ## Type Aliases
 
@@ -37,7 +38,20 @@ ___
 
 ### Feed
 
-Ƭ **Feed**: [`CatalogFeed`](#catalogfeed) \| [`PublicationFeed`](#publicationfeed)
+Ƭ **Feed**: [`CatalogFeed`](#catalogfeed) \| [`PublicationFeed`](#publicationfeed) & [`FeedInfo`](#feedinfo)
+
+___
+
+### FeedInfo
+
+Ƭ **FeedInfo**: `Object`
+
+#### Type declaration
+
+| Name | Type |
+| :------ | :------ |
+| `hasSearch?` | `boolean` |
+| `searchInfo?` | `string` |
 
 ___
 

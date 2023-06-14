@@ -36,6 +36,10 @@ declare global {
     onGetPublication?(
       request: GetPublicationRequest
     ): Promise<GetPublicationResponse>;
+    /**
+     * Callback method to search for publications
+     */
+    onSearch?(request: SearchRequest): Promise<Feed>;
   }
 
   interface Publication {
@@ -124,6 +128,11 @@ declare global {
      */
     name: string;
   }
+  interface SearchRequest {
+    apiId?: string;
+    searchInfo?: string;
+    query: string;
+  }
 
   interface GetPublicationRequest {
     source: string;
@@ -153,7 +162,12 @@ declare global {
     items: Publication[];
   };
 
-  type Feed = CatalogFeed | PublicationFeed;
+  type FeedInfo = {
+    hasSearch?: boolean;
+    searchInfo?: string;
+  };
+
+  type Feed = (CatalogFeed | PublicationFeed) & FeedInfo;
 
   interface PluginInfo {
     /**

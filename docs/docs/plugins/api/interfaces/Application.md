@@ -105,6 +105,24 @@ Callback method to get binary version of a publication rather than a url
 
 ___
 
+### onSearch
+
+▸ `Optional` **onSearch**(`request`): `Promise`<[`Feed`](../#feed)\>
+
+Callback method to search for publications
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `request` | [`SearchRequest`](SearchRequest.md) |
+
+#### Returns
+
+`Promise`<[`Feed`](../#feed)\>
+
+___
+
 ### onUiMessage
 
 ▸ `Optional` **onUiMessage**(`message`): `Promise`<`void`\>

@@ -15,6 +15,8 @@ custom_edit_url: null
 - [GetPublicationRequest](interfaces/GetPublicationRequest.md)
 - [GetPublicationResponse](interfaces/GetPublicationResponse.md)
 - [ImageInfo](interfaces/ImageInfo.md)
+- [Manifest](interfaces/Manifest.md)
+- [ManifestOptions](interfaces/ManifestOptions.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
 - [PluginInfo](interfaces/PluginInfo.md)
 - [Publication](interfaces/Publication.md)

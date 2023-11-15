@@ -205,6 +205,26 @@ declare global {
      * URL for the plugin's home page.
      */
     homepage?: string;
+    /**
+     * Plugin's manifest
+     */
+    manifest?: Manifest;
+  }
+
+  interface Manifest {
+    name: string;
+    script: string;
+    id?: string;
+    version?: string;
+    description?: string;
+    options?: string | ManifestOptions;
+    homepage?: string;
+    updateUrl?: string;
+  }
+
+  interface ManifestOptions {
+    page: string;
+    sameOrigin?: boolean;
   }
 }
 

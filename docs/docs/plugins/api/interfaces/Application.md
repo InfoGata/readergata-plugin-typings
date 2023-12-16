@@ -38,6 +38,19 @@ Get cors proxy configured in settings.
 
 ___
 
+### isLoggedIn
+
+▸ **isLoggedIn**(): `Promise`<`boolean`\>
+
+Returns true if thec user has been to logged in based in what is in
+authentication in the manifest
+
+#### Returns
+
+`Promise`<`boolean`\>
+
+___
+
 ### isNetworkRequestCorsDisabled
 
 ▸ **isNetworkRequestCorsDisabled**(): `Promise`<`boolean`\>
@@ -102,6 +115,30 @@ Callback method to get binary version of a publication rather than a url
 #### Returns
 
 `Promise`<[`GetPublicationResponse`](GetPublicationResponse.md)\>
+
+___
+
+### onPostLogin
+
+▸ `Optional` **onPostLogin**(): `Promise`<`void`\>
+
+Callback method that is called after the user has logged in
+
+#### Returns
+
+`Promise`<`void`\>
+
+___
+
+### onPostLogout
+
+▸ `Optional` **onPostLogout**(): `Promise`<`void`\>
+
+Callback method that is called after the user has logged out
+
+#### Returns
+
+`Promise`<`void`\>
 
 ___
 

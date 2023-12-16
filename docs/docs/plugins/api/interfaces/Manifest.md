@@ -8,6 +8,12 @@ custom_edit_url: null
 
 ## Properties
 
+### authentication
+
+• `Optional` **authentication**: [`ManifestAuthentication`](ManifestAuthentication.md)
+
+___
+
 ### description
 
 • `Optional` **description**: `string`

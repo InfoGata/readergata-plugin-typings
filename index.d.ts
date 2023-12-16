@@ -15,6 +15,11 @@ declare global {
      */
     createNotification(notification: NotificationMessage): Promise<void>;
     /**
+     * Returns true if thec user has been to logged in based in what is in
+     * authentication in the manifest
+     */
+    isLoggedIn(): Promise<boolean>;
+    /**
      * Sends a message to ui frames like `options` in `manifest.json`.
      */
     postUiMessage(msg: any): Promise<void>;
@@ -40,6 +45,14 @@ declare global {
      * Callback method to search for publications
      */
     onSearch?(request: SearchRequest): Promise<Feed>;
+    /**
+     * Callback method that is called after the user has logged in
+     */
+    onPostLogin?(): Promise<void>;
+    /**
+     * Callback method that is called after the user has logged out
+     */
+    onPostLogout?(): Promise<void>;
   }
 
   interface Publication {
@@ -220,11 +233,20 @@ declare global {
     options?: string | ManifestOptions;
     homepage?: string;
     updateUrl?: string;
+    authentication?: ManifestAuthentication;
   }
 
   interface ManifestOptions {
     page: string;
     sameOrigin?: boolean;
+  }
+
+  interface ManifestAuthentication {
+    loginUrl: string;
+    cookiesToFind?: string[];
+    loginButton?: string;
+    headersToFind?: string[];
+    completionUrl?: string;
   }
 }
 

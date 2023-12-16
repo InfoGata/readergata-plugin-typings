@@ -16,6 +16,7 @@ custom_edit_url: null
 - [GetPublicationResponse](interfaces/GetPublicationResponse.md)
 - [ImageInfo](interfaces/ImageInfo.md)
 - [Manifest](interfaces/Manifest.md)
+- [ManifestAuthentication](interfaces/ManifestAuthentication.md)
 - [ManifestOptions](interfaces/ManifestOptions.md)
 - [NotificationMessage](interfaces/NotificationMessage.md)
 - [PluginInfo](interfaces/PluginInfo.md)

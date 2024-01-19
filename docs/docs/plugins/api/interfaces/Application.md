@@ -61,6 +61,18 @@ Get cors proxy configured in settings.
 
 ___
 
+### getTheme
+
+▸ **getTheme**(): `Promise`<[`Theme`](../#theme)\>
+
+Returns the user's current theme
+
+#### Returns
+
+`Promise`<[`Theme`](../#theme)\>
+
+___
+
 ### isLoggedIn
 
 ▸ **isLoggedIn**(): `Promise`<`boolean`\>
@@ -83,6 +95,24 @@ Used to determine whether requests from networkRequest are restricted by CORs.
 #### Returns
 
 `Promise`<`boolean`\>
+
+___
+
+### onChangeTheme
+
+▸ **onChangeTheme**(`theme`): `Promise`<`void`\>
+
+Callback method that is called after a users changes theme
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `theme` | [`Theme`](../#theme) |
+
+#### Returns
+
+`Promise`<`void`\>
 
 ___
 

@@ -75,6 +75,12 @@ ___
 
 Ƭ **SourceType**: ``"url"`` \| ``"binary"``
 
+___
+
+### Theme
+
+Ƭ **Theme**: ``"dark"`` \| ``"light"`` \| ``"system"``
+
 ## Variables
 
 ### application

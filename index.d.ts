@@ -20,6 +20,10 @@ declare global {
      */
     isLoggedIn(): Promise<boolean>;
     /**
+     * Returns the user's current theme
+     */
+    getTheme(): Promise<Theme>;
+    /**
      * Sends a message to ui frames like `options` in `manifest.json`.
      */
     postUiMessage(msg: any): Promise<void>;
@@ -53,6 +57,10 @@ declare global {
      * Callback method that is called after the user has logged out
      */
     onPostLogout?(): Promise<void>;
+    /**
+     * Callback method that is called after a users changes theme
+     */
+    onChangeTheme(theme: Theme): Promise<void>;
   }
 
   interface Publication {
@@ -248,6 +256,8 @@ declare global {
     headersToFind?: string[];
     completionUrl?: string;
   }
+
+  export type Theme = "dark" | "light" | "system";
 }
 
 export {};
